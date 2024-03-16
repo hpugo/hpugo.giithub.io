@@ -34,7 +34,7 @@ npm run dev
 
 ## The Website!
 
-![Home Page](/Users/henry/Downloads/Code-Files/miles2/frontend/public/FireFitsSC/Screenshot 2024-03-16 at 1.23.49 PM.png)
+![Home Page](frontend/public/FireFitsSC/Screenshot%202024-03-16%20at%201.23.49 PM.png)
 
 The home page allows users to browse and look up shoes the website has available. You are able to filter by size as well as search by the name of the show. With your navigation on the top of the screen for easy access.
 
