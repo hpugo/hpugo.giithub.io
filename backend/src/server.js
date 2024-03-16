@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import express from 'express';
 import cors from 'cors';
@@ -7,7 +7,7 @@ import userRouter from './routers/user.router.js';
 import { dbconnect } from './config/database.config.js';
 import { dirname, join } from 'path';
 
-dotenv.config();
+// dotenv.config();
 
 dbconnect().then(() => {
   const __filename = fileURLToPath(import.meta.url);
