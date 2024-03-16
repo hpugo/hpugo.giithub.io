@@ -7,10 +7,13 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/ReigsterPage";
 import AuthRoute from "./components/AuthRoute";
 import CheckoutPage from "./pages/CheckoutPage";
+import PendingPage from "./pages/PendingPage";
+import NotFound from "./components/NotFound";
 
 export default function AppRoutes() {
     return <Routes>
         <Route path="/" element={<HomePage/> }/>
+        <Route path="/*" element={<NotFound/> }/>
         <Route path="/search/:searchTerm" element={<HomePage />} />
         <Route path="/size/:size" element={<HomePage />} />
         <Route path="/shoes/:id" element={<ShoePage />} />
@@ -20,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/checkout" element={<AuthRoute>
             <CheckoutPage />
         </AuthRoute>} />
+        <Route path="/payment" element={<PendingPage />}/>
 
     </Routes>;
 }
